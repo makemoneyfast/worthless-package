@@ -1,6 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
 const manifestOptions = {
   fileName: "asset-manifest.json",
@@ -27,16 +25,14 @@ module.exports = {
     main: "./src/index.tsx",
   },
   output: {
-    filename: "[name]-[contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    filename: "worthless-package.js",
+    library: {
+      name: "worthlesspackage",
+      type: "umd",
+    },
     clean: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "Something something",
-    }),
-    new WebpackManifestPlugin(manifestOptions),
-  ],
   module: {
     rules: [
       {
