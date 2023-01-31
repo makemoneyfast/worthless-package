@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HeadingWithSideEffect = (caption: string) => {
-  console.log("the caption is " + caption);
-  return <h1>{caption}</h1>;
+export const HeadingWithSideEffect = (props: { caption: string }) => {
+  console.log("the caption is " + props.caption);
+  return <h1>{props.caption}</h1>;
 };
