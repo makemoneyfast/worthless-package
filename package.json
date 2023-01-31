@@ -1,0 +1,46 @@
+{
+  "name": "worthless-package",
+  "version": "1.0.0",
+  "description": "A worthless package written purely to see how NPM packages are created.",
+  "main": "src/index.tsx",
+  "author": "Alex Murray <make.money.fast@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode=production",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:rebuild": "jest -u",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --testTimeout=300000",
+    "start": "webpack serve --open --config webpack.dev-config.js --mode=development"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.5",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest-environment-jsdom": "^29.3.1",
+    "react-test-renderer": "^18.2.0",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-manifest-plugin": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
