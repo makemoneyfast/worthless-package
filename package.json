@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A worthless package written purely to see how NPM packages are created.",
   "exports": {
-    ".": "./src/index.tsx",
-    "./silly": "./src/silly.tsx"
+    ".": "./src/exports.ts",
+    "./x": "./src/advanced.tsx"
   },
   "author": "Alex Murray <make.money.fast@gmail.com>",
   "license": "MIT",

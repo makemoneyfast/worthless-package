@@ -22,7 +22,7 @@ const manifestOptions = {
 module.exports = {
   mode: "production",
   entry: {
-    main: "./src/index.tsx",
+    main: "./src/exports.ts",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
